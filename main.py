@@ -1,4 +1,4 @@
-# Jolan Theuns
+# Jolan Theuns 2019-12-//
 # 467794@student.saxion.nl 12/2019
 # Aplication for sending sensor data to the TTN (The Things Network)
 from network import WLAN                              # For operation of WiFi network
@@ -23,7 +23,7 @@ mpp = MPL3115A2(py,mode=PRESSURE)
 lt = LTR329ALS01(py)
 temp = si.temperature
 
-# Function to setup the conection to the TTN
+# Function to setup the conection to the TTN Written by TTN
 def loraSetup():
    freq = 902300000
 
