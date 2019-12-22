@@ -61,17 +61,29 @@ socketTTN = loraSetup() # Function call to setup the Lora
 
 # Main loop
 while True:
-   # printing the values for debugging
+
+    #transforming the data to allow for values above 255
+    blueLux,redLux = lt.light()
+    tranpres = (int(mpp.pressure())/1000)
+
+    counterExtraLux = 0 
+    changedLux = blueLux
+    while changedLux>255:
+       changedLux = (changedLux -255)
+       counterExtraLux = counterExtraLux + 1
+
+    # encodinng the data to send over the network
+    dataList = [int(si.temperature()),int(si.humidity()),int(tranpres),int(changedLux),int(counterExtraLux)]
+    data = bytes(dataList)
+
+    # printing the values for debugging
     print("humidity: "+ str(si.humidity()))
     print("temperture: "+ str(si.temperature()))
     print("Pressure: " + str(mpp.pressure()))
-    print("v2.0")
-
-    # encodinng the data to send over the network
-    blueLux,redLux = lt.light()
-    tranpres = (int(mpp.pressure())/1000)
-    dataList = [int(si.temperature()),int(si.humidity()),int(tranpres),int(blueLux)]
-    data = bytes(dataList)
+    print("lux:"+str(blueLux))
+    print("lux:" + str(changedLux+(counterExtraLux*255)))
+    print(str(changedLux))
+    print("v3.0")
 
     # sending data to TTN and sleep the device
     socketTTN.send(data)
