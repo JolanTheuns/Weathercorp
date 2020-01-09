@@ -9,8 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node.js and your preferred Python 3 compiler must be installed. The connection could be set by logining to the The Things Network, filling in the necessary credentials and in the “Console” tab, pick “Application”. Press the “add application” button.
-Create your own Application by filling up with correct contents.
+Node.js and your preferred Python 3 compiler must be installed. The connection to The Things Network could be set by following this tutorial [https://www.thethingsnetwork.org/docs/devices/rak811-lora-module-breakout-board/connecting-to-ttn.html].
 
 ## Deployment
 
