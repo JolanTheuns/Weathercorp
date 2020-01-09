@@ -19,7 +19,7 @@ import socket
 # setup chips and variables
 py = Pysense()
 si = SI7006A20(py)
-mpp = MPL3115A2(py,mode=PRESSURE)
+mpp = MPL3115A2(py, mode=PRESSURE)
 lt = LTR329ALS01(py)
 temp = si.temperature
 
@@ -33,8 +33,8 @@ def loraSetup():
    #Setup the single channel for connection to the gateway 
    for channel in range(0, 8): 
       lora.remove_channel(channel) 
-   for chan in range(0,3): 
-      lora.add_channel(chan,  frequency=freq,  dr_min=0,  dr_max=3) 
+   for chan in range(0, 3): 
+      lora.add_channel(chan, frequency=freq, dr_min=0, dr_max=3) 
 
    #Device Address 
    deviceAdress = struct.unpack(">l", binascii.unhexlify('26011AB0'))[0] 
@@ -68,8 +68,8 @@ while True:
 
     counterExtraLux = 0 
     changedLux = blueLux
-    while changedLux>255:
-       changedLux = (changedLux -255)
+    while changedLux > 255:
+       changedLux = (changedLux - 255)
        counterExtraLux = counterExtraLux + 1
 
     # encodinng the data to send over the network
@@ -77,11 +77,11 @@ while True:
     data = bytes(dataList)
 
     # printing the values for debugging
-    print("humidity: "+ str(si.humidity()))
-    print("temperture: "+ str(si.temperature()))
+    print("humidity: " + str(si.humidity()))
+    print("temperture: " + str(si.temperature()))
     print("Pressure: " + str(mpp.pressure()))
-    print("lux:"+str(blueLux))
-    print("lux:" + str(changedLux+(counterExtraLux*255)))
+    print("lux:" + str(blueLux))
+    print("lux:" + str(changedLux + (counterExtraLux*255)))
     print(str(changedLux))
     print("v3.0")
 
