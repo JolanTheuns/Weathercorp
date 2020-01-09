@@ -1,0 +1,103 @@
+[
+    {
+        "id": "3daee5cd.de2eda",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e6ab67b2.20a018",
+        "type": "ttn uplink",
+        "z": "3daee5cd.de2eda",
+        "name": "weatherstationgroup5_2",
+        "app": "25d2d4b0.e5b2ac",
+        "dev_id": "",
+        "field": "",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "75b6e06.9babe2"
+            ]
+        ]
+    },
+    {
+        "id": "e32188e1.8ed7f8",
+        "type": "mysql",
+        "z": "3daee5cd.de2eda",
+        "mydb": "a8c99961.c27eb8",
+        "name": "",
+        "x": 560,
+        "y": 440,
+        "wires": [
+            [
+                "d6b7b065.c391c"
+            ]
+        ]
+    },
+    {
+        "id": "75b6e06.9babe2",
+        "type": "function",
+        "z": "3daee5cd.de2eda",
+        "name": "",
+        "func": "temp = msg.payload.temp\nhum = msg.payload.hum\npres = msg.payload.pres\nlight = msg.payload.light\nmsg.topic = \"INSERT INTO weather ( `temperature`, `humidity`, `pressure`,`light`) VALUES (\" + temp + \",\" + hum + \",\" + pres +\",\"+ light +\");\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "74f30f4a.ca80c",
+                "e32188e1.8ed7f8"
+            ]
+        ]
+    },
+    {
+        "id": "d6b7b065.c391c",
+        "type": "debug",
+        "z": "3daee5cd.de2eda",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "74f30f4a.ca80c",
+        "type": "debug",
+        "z": "3daee5cd.de2eda",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 450,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "25d2d4b0.e5b2ac",
+        "type": "ttn app",
+        "z": "",
+        "appId": "weatherstationgroup5",
+        "accessKey": "ttn-account-v2.W4_517MBtoRKCQ6fAlExHEXsvSLNRIRHnNcNr9MzcYE",
+        "discovery": "discovery.thethingsnetwork.org:1900"
+    },
+    {
+        "id": "a8c99961.c27eb8",
+        "type": "MySQLdatabase",
+        "z": "",
+        "host": "jolantheuns.com",
+        "port": "3306",
+        "db": "u504871954_weather",
+        "tz": ""
+    }
+]
