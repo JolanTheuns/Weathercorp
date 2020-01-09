@@ -19,7 +19,7 @@ import socket
 # setup chips and variables
 py = Pysense()
 si = SI7006A20(py)
-mpp = MPL3115A2(py,mode=PRESSURE)
+mpp = MPL3115A2(py, mode=PRESSURE)
 lt = LTR329ALS01(py)
 temp = si.temperature
 
@@ -34,7 +34,7 @@ def loraSetup():
    for channel in range(0, 8): 
       lora.remove_channel(channel) 
    for chan in range(0, 3): 
-      lora.add_channel(chan,  frequency=freq,  dr_min=0,  dr_max=3) 
+      lora.add_channel(chan, frequency=freq, dr_min=0, dr_max=3) 
 
    #Device Address 
    deviceAdress = struct.unpack(">l", binascii.unhexlify('26011AB0'))[0] 
@@ -68,7 +68,7 @@ while True:
 
     counterExtraLux = 0 
     changedLux = blueLux
-    while changedLux>255:
+    while changedLux > 255:
        changedLux = (changedLux - 255)
        counterExtraLux = counterExtraLux + 1
 
