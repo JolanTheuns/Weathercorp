@@ -9,26 +9,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node.js and your preferred Python 3 compiler must be installed. The connection to The Things Network could be set by following this tutorial [https://www.thethingsnetwork.org/docs/devices/rak811-lora-module-breakout-board/connecting-to-ttn.html].
+Node.js and Atom or Visual studio code must be installed with the Pymakr extension. The connection to The Things Network could be set by following this tutorial [https://www.thethingsnetwork.org/docs/devices/rak811-lora-module-breakout-board/connecting-to-ttn.html].
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Please follow the set up file.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* [Visual studio code](https://code.visualstudio.com/) - The IDE used
+* [Python 3.8.0](https://www.python.org/) - The language used
+* [IBM Cloud](https://www.ibm.com/cloud) - Used to deploy the Node-Red
+* [The things network](https://www.thethingsnetwork.org/) - Used to interact with LoPy
 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jolan Theuns** - *Initial work* 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
