@@ -30,10 +30,3 @@ Please follow the set up file.
 * **Nguyen, Tran Khanh Linh** - *ACS students* 
 * **Dang, Quyen** - *ACS students* 
 * **Klosinski, Antoine** - *ACS students* 
-
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
