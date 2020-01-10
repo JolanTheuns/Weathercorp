@@ -25,9 +25,11 @@ Please follow the set up file.
 
 ## Authors
 
-* **Jolan Theuns** - *Initial work* 
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Theuns, Jolan** - *ACS students*
+* **Heiden, Jeroen van der** - *ACS students* 
+* **Nguyen, Tran Khanh Linh** - *ACS students* 
+* **Dang, Quyen** - *ACS students* 
+* **Klosinski, Antoine** - *ACS students* 
 
 
 ## Acknowledgments
