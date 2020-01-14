@@ -1,7 +1,18 @@
 ﻿# weathercorp
 
-weathercorp is a weather station project, containing a LoPy sensornode, to capture every minute: temperature, ambient light and/or barometric pressure. The data is then transmitted wirelessly, using LoRa, through a gateway, to The Things Network. Using NodeRED we retrieve the data and store it in a SQL database. Upon request the end-user can display all weather data graphically in a user interface, being an Android mobile app and a website.
-This repository is used to store all of the works of this project, composing the code for LoPy, NodeRED, the website and the mobile app.
+In the Project Software Engineering, the project, undertaken by the Team was to create a system for facilitating weather data collection. 
+
+In general, the working of the Project encompasses various areas from the field of computer science, and puts a heavy emphasis on teamwork if the Project is to achieve final success.
+
+The project, called weathercorp, contains a LoPy sensornode to capture every minute: temperature, ambient light and/or barometric pressure. The data is then transmitted wirelessly, using LoRa, through a gateway, to The Things Network. Using NodeRED we retrieve the data and store it in a SQL database. Upon request the end-user can display all weather data graphically in a user interface, being an Android mobile app and a website.
+
+Various teamwork techniques will be applied throughout the Team’s work on the Project,
+such as Scrum, in order for the Team to strive to achieve perfection in its final solution to
+the problem in question. An approach of MoSCoW will also be used from the very start, so
+that the Team may already decide whether or not to implement certain aspects of the
+Project.
+
+This repository is used to store all of the works of this project, composing the code for LoPy, NodeRED, JavaFX, the website and the mobile app. Further information regarding the project could be found on the project's final documentation.
 
 ## Getting Started
 
