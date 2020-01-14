@@ -21,7 +21,6 @@ py = Pysense()
 si = SI7006A20(py)
 mpp = MPL3115A2(py,mode=PRESSURE)
 lt = LTR329ALS01(py)
-temp = si.temperature
 
 # Function to setup the conection to the TTN Written by TTN
 def loraSetup():
