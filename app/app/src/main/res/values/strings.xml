@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">WeatherCorp</string>
+    <string name="action_settings">Settings</string>
+    <string name="logo">Image</string>
+
+    <string-array name="headerSelection">
+        <item>Home</item>
+        <item>One</item>
+        <item>About</item>
+    </string-array>
+
+    <string name="aboutPage">
+        This page shows the average of the of the last 7 days.\n
+        The project is made possible by:\n\n
+        \t\t Dang, Quyen (MQ) 463122@student.saxion.nl\n
+        \t\t Klosinski, Antoine (AJT) 468506@student.saxion.nl\n
+        \t\t Heiden, Jeroen (J) van der 463333@student.saxion.nl\n
+        \t\t Theuns, Jolan (J) 467794@student.saxion.nl\n
+        \t\t Nguyen, Tran Khanh Linh (TKL) 461345@student.saxion.nl\n\n
+        This made possible by the following tools:\n
+        \t\t Android Studio\n
+        \t\t Genymotion\n
+        \t\t Oracle VM VirtualBox\n
+        \t\t MPAndroidChart library\n
+
+    </string>
+    <string name="singlePage">Single page</string>
+    <string name="multipleGraphPage">Multiple graph page</string>
+
+    <string name="lastDayLum">
+        Luminosity of the last day lux:\n
+    </string>
+    <string name="lastDayHum">
+        Humidity of the last day %:\n
+    </string>
+    <string name="lastDayAir">
+        Air pressure of the last day mbar:\n
+    </string>
+    <string name="lastDayTem">
+        Temperature of the last day ºC:\n
+    </string>
+    <string name="lastHourLum">
+        Luminosity of the last hour lux:\n
+    </string>
+    <string name="lastHourHum">
+        Humidity of the last hour %:\n
+    </string>
+    <string name="lastHourAir">
+        Air pressure of the last hour mbar:\n
+    </string>
+    <string name="lastHourTem">
+        Temperature of the last hour ºC:\n
+    </string>
+    <string name="lastWeekLum">
+        Latest luminosity lux:\n
+    </string>
+    <string name="lastWeekHum">
+        Latest humidity %:\n
+    </string>
+    <string name="lastWeekAir">
+        Latest air pressure mbar:\n
+    </string>
+    <string name="lastWeekTem">
+        Latest temperature ºC:\n
+    </string>
+</resources>

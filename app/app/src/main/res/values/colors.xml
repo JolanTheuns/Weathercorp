@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="luminosityLine">#690082</color>
+    <color name="temperatureLine">#000a82</color>
+    <color name="humidityLine">#000a82</color>
+    <color name="airPressureLine">#000a82</color>
+    <color name="luminosityBackGround">#c76283</color>
+    <color name="temperatureBackGround">#78ff78</color>
+    <color name="humidityBackGround">#FF5722</color>
+    <color name="airPressureBackGround">#2196F3</color>
+    <color name="label">#FF5722</color>
+</resources>

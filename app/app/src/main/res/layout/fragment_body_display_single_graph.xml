@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singleID"
+    tools:context=".BodyDisplaySingleGraph">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/lastWeek"
+                android:text="Last week"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+            </Button>
+
+            <Button
+                android:id="@+id/lastDay"
+                android:text="Last day"
+                android:layout_toEndOf="@+id/lastWeek"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+            </Button>
+
+            <Button
+                android:id="@+id/lastHour"
+                android:text="Last hour"
+                android:layout_toEndOf="@+id/lastDay"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+            </Button>
+
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/singleGraph"
+            android:layout_below="@+id/relative"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:id="@+id/lastDataInformation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/singleGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+
+</ScrollView>
