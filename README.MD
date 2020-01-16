@@ -32,7 +32,8 @@ Please follow the set up file.
 * [Python 3.8.0](https://www.python.org/) - The language used
 * [IBM Cloud](https://www.ibm.com/cloud) - Used to deploy the Node-Red
 * [The things network](https://www.thethingsnetwork.org/) - Used to interact with LoPy
-
+* [Android Studio](https://developer.android.com/studio/) - Used to build Android application
+* [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - Used to display graph in Android app
 
 ## Authors
 
