@@ -1,4 +1,4 @@
-﻿# Weathercorp
+# Weathercorp
 
 In the Project Software Engineering, the project, undertaken by the Team was to create a system for facilitating weather data collection. 
 
