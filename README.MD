@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites 
 
-Node.js and Atom or Visual studio code must be installed with the Pymakr extension. The connection to The Things Network could be set by following this tutorial [https://www.thethingsnetwork.org/docs/devices/rak811-lora-module-breakout-board/connecting-to-ttn.html]. 
+Node.js and Atom or Visual studio code must be installed with the Pymakr extension. The connection to The Things Network could be set by following this [tutorial] (https://www.thethingsnetwork.org/docs/devices/rak811-lora-module-breakout-board/connecting-to-ttn.html). 
 
 ## Deployment 
 
